@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 #wrapper{
     width: 100%;
     height: 100%;
@@ -68,32 +72,38 @@ margin: 10px 5%;}
 
 #activities__program{
     width: 100%;
-    height: 500px;
+    height: 450px;
+    margin-top: 100px;
     text-align: center;
 }
 
-.activities__detail{
-    width: 350px;
+.activities__item{
+    width: 25%;
     height: 400px;
+    float: left;
+    padding: 0px 20px;
+}
+
+.activities__background{
+    width: 345px;
+    height: 395px;
     background-color: white;
     border-radius: 20px;
-    float: left;
     text-align: center;
-    margin: 50px 10px;
-    box-sizing: content-box;
+    background-color: white;
 }
 
-.activities__detail img{
+.activities__item img{
     border-radius: 20px;
     margin: 15px;
 }
 
-.activities__detail p{
+.activities__item p{
     color: darkgray;
     margin: 15px 15px;
 }
 
-.activities__detail button{
+.activities__item button{
     padding: 10px 30px;
     border-radius: 20px;
     border-color: rgba(184, 182, 182, 0.545);
@@ -108,12 +118,11 @@ margin: 10px 5%;}
 
 #view{
     height: 30px;
-    padding: 10px 30px;
+    padding: 5px 30px;
     border-radius: 20px;
     background-color: rgb(250, 244, 242);
     color: rgb(234, 144, 121);
     border: 1px solid rgb(234, 144, 121);
-    margin: 0px auto;
 }
 
 .contact{
@@ -123,14 +132,13 @@ margin: 10px 5%;}
     background-image: url(mask.png);
     background-repeat: no-repeat;
     background-size: 1000px 350px;
-    /* background-position: -100px; */
-    display: flex;
 }
 
 #contact__left{
-    width: 40%;
+    width: 30%;
     height: 350px;
     margin-left: 20px;
+    float: left;
 }
 
 #contact__left img{
@@ -138,9 +146,10 @@ margin: 10px 5%;}
 }
 
 #contact__right{
-    width: 60%;
+    width: 30%;
     height: 350px;
     margin-left: 20%;
+    float: left;
 }
 
 #contact__right h2{
@@ -159,13 +168,13 @@ margin: 10px 5%;}
 
 #app{
     text-align: left;
-    width: 300px;
+    width: 70%;
     height: 100px;
     float: left;
 }
 
 #follow{
-    width: 300px;
+    width: 30%;
     height: 100px;
     float: left;
 }
@@ -220,3 +229,15 @@ margin: 10px 5%;}
     margin: 0px 50px;
     float: left;
 }
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: darkgray;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
